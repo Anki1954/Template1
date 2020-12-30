@@ -1,0 +1,319 @@
+﻿@import url("style.css");
+@import url("framework.css");
+
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+.row0, .row0 a{}
+.row1, .row1 a{}
+.row2, .row2 a{}
+.row3, .row3 a{}
+.row4, .row4 a{}
+.row5, .row5 a{}
+.row6, .row6 a{}
+
+/* Top Bar
+--------------------------------------------------------------------------------------------------------------- */
+#topbar{padding:15px 0; font-size:.8rem; text-transform:uppercase;}
+ #topbar ul li a{color:#e67e22;}
+#topbar *{margin:0;}
+#topbar ul li{display:inline-block; margin-right:10px; padding-right:15px; border-right:1px solid;color:#e67e22;}
+#topbar ul li:last-child{margin-right:0; padding-right:0; border-right:none;}
+#topbar i{margin:0 5px 0 0; line-height:normal;}
+
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+#header{}
+
+#header #logo{margin:30px 0 0 0;}
+#header #logo h1{margin:0; padding:0; font-size:22px; text-transform:uppercase;}
+
+
+
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+.container{padding:80px 0;}
+
+/* Content */
+.container .content{}
+
+.sectiontitle{display:block; max-width:55%; margin:0 auto 80px; text-align:center;}
+.sectiontitle *{margin:0;}
+.input{	display:inline-block;border-radius:50%;
+	height:30px;
+	width:100px;
+}
+
+.overview{}
+.overview > li{margin-bottom:50px;}
+.overview > li:nth-last-child(-n+3){margin-bottom:0;}/* Removes bottom margin from the last three items - margin is restored in the media queries when items stack */
+.overview > li:nth-child(3n+1){margin-left:0; clear:left;}/* Removes the need to add class="first" */
+.overview > li figure{max-width:320px;}
+.overview > li figure img{margin-bottom:30px;}
+.overview > li figure figcaption *{margin:0;}
+.overview > li figure .heading{margin-bottom:10px; font-size:1.2rem;}
+
+.clients{}
+.clients li:last-child{margin-bottom:0;}/* Used when elements stack in small viewports */
+.clients li a{display:inline-block; max-width:100%;}
+
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+#footer{padding:80px 0 50px;}
+#footer .heading{margin-bottom:50px; font-size:1.2rem;}
+#footer .linklist li{display:block; margin-bottom:15px; padding:0 0 5px 0; border-bottom:1px solid;}
+#footer .linklist li:last-child{margin:0; padding:0; border:none;}
+#footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
+#footer .linklist li, #footer .linklist li::after{clear:both;}
+
+#footer .contact{}
+#footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
+#footer .contact li *{margin:0; padding:0; line-height:1.6;}
+#footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
+
+#footer input, #footer button{border:1px solid;}
+#footer input{display:block; width:100%; padding:8px;}
+#footer button{padding:8px 18px 10px; text-transform:uppercase; font-weight:700; cursor:pointer;}
+
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:20px 0;}
+#copyright *{margin:0; padding:0;}
+
+
+/* Transition Fade
+This gives a smooth transition to "ALL" elements used in the layout - other than the navigation form used in mobile devices
+If you don't want it to fade all elements, you have to list the ones you want to be faded individually
+Delete it completely to stop fading
+--------------------------------------------------------------------------------------------------------------- */
+*, *::before, *::after{transition:all .3s ease-in-out;}
+#mainav form *{transition:none !important;}
+
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+
+#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
+#mainav .drop::after, #mainav li li .drop::after,
+ .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:12px;}
+
+/* Top Navigation */
+#mainav{}
+#mainav ul{text-transform:uppercase;}
+#mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
+#mainav ul ul ul{left:180px; top:0;}
+#mainav li{display:inline-block; position:relative; margin:0 15px 0 0; padding:0;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:30px 0;}
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+#mainav .drop{padding-left:15px;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
+#mainav .drop::after{top:35px; left:5px;}
+#mainav li li .drop::after{top:15px; left:5px;}
+#mainav ul ul{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+
+/* Back to Top */
+#backtotop{z-index:999; display:inline-block; position:fixed; visibility:hidden; bottom:20px; right:20px; width:36px; height:36px; line-height:36px; font-size:16px; text-align:center; opacity:.2;}
+#backtotop i{display:block; width:100%; height:100%; line-height:inherit;}
+#backtotop.visible{visibility:visible; opacity:.5;}
+#backtotop:hover{opacity:1;}
+
+
+/* Tables
+--------------------------------------------------------------------------------------------------------------- */
+table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top;}
+table, th{table-layout:auto;}
+table{width:100%; margin-bottom:15px;}
+th, td{padding:5px 8px;}
+td{border-width:0 1px;}
+
+
+/* Gallery
+--------------------------------------------------------------------------------------------------------------- */
+#gallery{display:block; width:100%; margin-bottom:50px;}
+#gallery figure figcaption{display:block; width:100%; clear:both;}
+#gallery li{margin-bottom:30px;}
+
+
+/* Font Awesome Social Icons
+--------------------------------------------------------------------------------------------------------------- */
+.faico, .footerhead{margin:0; padding:0; list-style:none; border-radius:100%;}
+.faico li, .footerhead li{display:inline-block; margin:8px 4px 0 0; padding:0; line-height:normal;}
+.faico li,.footerhead li:last-child{margin-right:0;}
+.faico a{display:inline-block; width:36px; height:36px; line-height:36px; font-size:18px; text-align:center;border-radius:100%;}
+.faico a{color:#474747; background-color:#EEEEEE;}
+.faicon-dribble:hover{background-color:#EA4C89;}
+.faicon-facebook:hover{background-color:#3B5998;}
+.faicon-google-plus:hover{background-color:#DB4A39;}
+.faicon-linkedin:hover{background-color:#0E76A8;}
+.faicon-twitter:hover{background-color:#00ACEE;}
+.faicon-vk:hover{background-color:#4E658E;}
+.map-maker{height:36px;	width:36px;}
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#474747; background-color:#FFFFFF;}
+a{color:#FF090F;}
+a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
+hr, .borderedbox{border-color:#D7D7D7;}
+input:focus, textarea:focus, *:required:focus{border-color:#FF090F;}
+
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#FF090F; border-color:#FF090F;}
+.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+
+
+/* Rows */
+.row0, .row0 a{color:#474747;}
+.row1{color:#474747; background-color:#EEEEEE;}
+.row2{color:#474747; background-color:#EEEEEE;}
+.row3{color:#474747; background-color:#FFFFFF;}
+.row4{color:#CBCBCB;}
+.row5{color:#676767; background-color:rgba(0,0,0,.5);}
+.row5 a{color:inherit;}
+.row6{color:#474747; background-color:#D7D7D7;}
+
+/* Top Bar */
+#topbar ul li{border-color:rgba(0,0,0,.2);}
+#topbar div:first-of-type li:first-child a{color:#D01818;}
+
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+/* Header */
+#header #logo a{color:inherit;}
+
+/* Content Area */
+#introblocks{color:#474747; background-color:#FFFFFF;}
+#introblocks article i{color:rgba(0,0,0,.2);}
+#introblocks article:hover .heading a, #introblocks article:hover i{color:inherit;}
+
+/* Form Design*/
+input[type=text],textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 2px 0 20px 0;
+  display: inline-block;
+  border: none;
+ }
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+/* Footer */
+#footer .heading{color:#FFFFFF;}
+#footer hr, #footer .borderedbox, #footer .linklist li{border-color:rgba(255,255,255,.2);}
+#footer input, #footer button{border-color:transparent;}
+#footer input{color:#474747; background-color:#EEEEEE;}
+#footer input:focus{border-color:#FF090F;}
+#footer button{color:#FFFFFF; background-color:#FF090F;}
+/* Navigation */
+#mainav li a{color:inherit; }
+ #mainav a:hover, #mainav li:hover > a{color:#FF090F; background-color:rgba(0,0,0,.2);padding:10px;
+	text-decoration:none;}
+#mainav li li a, #mainav .active li a{color:#474747; background-color:rgba(233,233,233,.8);/* #E9E9E9 */ border-color:rgba(255,255,255,.4);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#FF090F;}
+#mainav form select{color:#FFFFFF; background-color:#000000;}
+
+#mainav .active a{
+	line-height:25px;
+	background-color:#ff6a00;
+	padding:12px;
+	text-decoration:none;
+	color:white;
+}
+.container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
+.container .sidebar nav a:hover{color:#FF090F;}
+
+#backtotop{color:#FFFFFF; background-color:#FF090F;}
+
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport{width:device-width;}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:1224px){
+	.hoc{max-width:1224px;}
+}
+/*-----------------------------------------------*/
+@media only screen and
+(min-device-width:320px)
+
+{
+	#topbar{
+		padding:5px 0;
+	}
+}
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width:750px){
+	.flex-direction-nav .flex-prev, .flex-direction-nav .flex-next{display:none;}
+	.flex-control-nav{display:block;}
+
+	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+	.fl_left, .fl_right{display:block; float:none;}
+	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
+	.right_half,.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+	
+	#topbar{padding-top:15px; text-align:center;}
+	#topbar ul{margin:0 0 15px 0; line-height:normal;}
+	#header{text-align:center;}
+	#header #logo{margin:0 0 15px 0;}
+	.sectiontitle{max-width:none;}
+	.overview > li:nth-last-child(-n+3){margin-bottom:50px;}
+}
+
+/**/
+@media screen and (max-width:450px){
+	#topbar ul li{margin-bottom:2px; padding-right:0; border-right:none;}
+	.right_half{
+		display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;
+	}
+}
+
+       
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:650px){
+	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
+	.scrollable table{margin:0; padding:0; white-space:nowrap;}
+
+	.inline li{display:block; margin-bottom:10px;}
+	.pushright li{margin-right:0;}
+
+	.font-x2{font-size:1.4rem;}
+	.font-x3{font-size:1.6rem;}
+}
+
+/*      */
+
+@media screen and (max-device-width:900px)
+{
+	#topbar{}
+}
+@media screen and (max-device-width:900px)
+{
+	.hoc{max-width:90%;}
+}

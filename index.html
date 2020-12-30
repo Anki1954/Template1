@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+<title>Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {max-width: 1000px; position: relative; margin: auto; }
+
+        /* Caption text */
+        .text {color: #f2f2f2;font-size: 15px;padding: 8px 12px;position: absolute; bottom: 8px; width: 100%;text-align: center; }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }*/
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <div class="wrapper row0" >
+        <div id="topbar" class="hoc clear">
+            <div class="fl_left">
+                <ul class="nospace">
+                    <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+            <div class="fl_right">
+                <ul class="nospace">
+                    <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
+                    <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+    <div class="wrapper row1" id="myheader">
+        <header id="header" class="hoc clear">
+             
+            <div id="logo" class="fl_left">
+                <h1><a href="index.html">Company Name</a></h1>
+            </div>
+            <div id="mainav"class="fl_right">
+                <ul class="clear">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li>
+                        <a class="drop" href="#">Pages</a>
+                        <ul>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Full Width</a></li>
+                            <li><a href="#">Sidebar Left</a></li>
+                            <li><a href="#">Sidebar Right</a></li>          
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Product</a>
+                    </li>
+                    <li><a href="#">Link Text</a></li>
+                    <li><a href="#">Link Text</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div class="content">
+        <div class="wrapper row3 ">
+
+            <div class="mySlides">
+                <img src="../Template2/images/demo/img1.jpg" style="width:100%; height:450px;">         
+                <div class="text">Caption Text</div> 
+            </div>
+
+            <div class="mySlides">
+                <img src="../Template2/images/demo/img2.jpg" style="width:100%; height:450px;">
+                <div class="text">Caption Two</div>  
+            </div>
+
+            <div class="mySlides">
+                <img src="../Template2/images/demo/img3.jpg" style="width:100%; height:450px;">
+                <div class="text">Caption Three</div>
+            </div>        
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+           
+        </div>
+        <div class="wrapper row3">
+            <main class="hoc container clear">
+                <!-- main body -->
+                
+
+                <hr class="btmspace-80">
+                  <section>
+                    <div class="sectiontitle">
+                      <h6 class="heading">Welcome to our Products</h6>
+                      <p></p>
+                    </div>
+                    <ul class="nospace group overview">
+                      <li class="one_third">
+                        <figure><a href="#"><img src="images/demo/320x240.png" alt=""></a>
+                          <figcaption>
+                            <h6 class="heading"></h6>
+                            <p></p>
+                          </figcaption>
+                        </figure>
+                      </li>
+                      <li class="one_third">
+                        <figure><a href="#"><img src="images/demo/320x240.png" alt=""></a>
+                          <figcaption>
+                            <h6 class="heading">Products</h6>
+                            <p></p>
+                          </figcaption>
+                        </figure>
+                      </li> 
+                      <li class="one_third">    
+                        <figure><a href="#"><img src="" alt=""></a>
+                          <figcaption>
+                            <h6 class="heading"></h6>
+                            <p></p>
+                          </figcaption>
+                        </figure>
+                      </li>
+                    </ul>
+                  </section>
+                <!-- / main body -->
+                <div class="clear"></div>
+            </main>
+        </div>
+
+
+        <div class="wrapper row3">
+            <!--<figure class="hoc container clear clients">
+                 <figcaption class="sectiontitle">
+                    <h6 class="heading">Nullam scelerisque orci eu</h6>
+                    <p>Pulvinar sodales suspendisse in purus vel massa fermentum</p>
+                  </figcaption>
+                <ul class="nospace group">
+                    <li class="one_quarter first"><a href="#"><img src="images/demo/222x100.png" alt=""></a></li>
+                    <li class="one_quarter"><a href="#"><img src="images/demo/222x100.png" alt=""></a></li>
+                    <li class="one_quarter"><a href="#"><img src="images/demo/222x100.png" alt=""></a></li>
+                    <li class="one_quarter"><a href="#"><img src="images/demo/222x100.png" alt=""></a></li>
+                </ul>
+            </figure>-->
+        </div>
+        <div class="wrapper row6">
+          <br/> 
+            <center><h6 class="heading">Contact US</h6></center>    
+            <div class="hoc clear">
+                <p class="fl_left"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15225.159015140982!2d78.36320867868939!3d17.445840358696316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93ddb58d1b49%3A0xcfcead772f6ce1c9!2sGoogle%20Hyderabad!5e0!3m2!1sen!2sin!4v1607406070702!5m2!1sen!2sin" width="650" height="400" frameborder="0" style="border:0;" aria-hidden="false" tabindex="0"></iframe></p>
+                <div class="right_half">
+                    <form action="#" class="form-signin">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" />
+
+                        <label for="country">Country</label>
+                        <select id="country" name="country" style=" margin: 2px 0 20px 0;">
+                            <option value="australia">India</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject Name" style="height:40px" />
+
+                        <label for="message">Message</label>
+                        <textarea type="text" id="message" name="message" placeholder="Type Message" style="height:80px;"></textarea>
+                        <br />
+                        <center><input type="button" id="button" name="submit" style="width:80px; height:40px;" value="SUBMIT" /></center>
+                    </form>
+                </div>                   
+            </div>
+        </div>
+        <!-- Footer Background Image Wrapper -->
+        <div class="bgded" style="background-image:url('images/demo/footer.jpg'); width:100%;">
+            <div class="wrapper row4">
+                <footer id="footer" class="hoc clear">
+                   
+                    <div class="one_quarter">
+                        <h6 class="heading">Official Address</h6>
+                        <ul class="footerhead linklist contact">
+                            <li><i class="fa fa-map-marker"></i>Street Name &amp; Number, Town, Postcode/Zip</li>
+                            <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
+                            <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
+                        </ul>
+                    </div>
+                    <div class="one_quarter">
+                        <h6 class="heading">Useful Links</h6>
+                        <ul class="footerhead linklist">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="one_quarter">
+                        <h6 class="heading">Our Services</h6>
+                        <ul class="footerhead linklist">
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Project Management</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Graphics Design</a></li>
+                        </ul>
+                    </div>
+                    <div class="one_quarter">
+                        <h6 class="heading">Our Social Networks</h6>
+                        <p class="nospace btmspace-15" style="text-align:justify";>At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</p>
+                        <ul class="faico clear">
+                            <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+            <div class="wrapper row5">
+                <div id="copyright" class="hoc clear">
+                    <p class="fl_left">Copyright &copy; 2020 - All Rights Reserved - <a href="#">Domain Name</a></p>
+                    <p class="fl_right">Template by <a>Templates</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- JAVASCRIPTS -->
+    <script src="jquery.mobilemenu.js"></script>
+    <script src="scroll.js" type="text/javascript"></script>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+    </script>
+</body>
+</html>
