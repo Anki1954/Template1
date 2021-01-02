@@ -170,8 +170,8 @@ input:focus, textarea:focus, *:required:focus{border-color:#FF090F;}
 .row1{color:#474747; background-color:#EEEEEE;}
 .row2{color:#474747; background-color:#EEEEEE;}
 .row3{color:#474747; background-color:#FFFFFF;}
-.row4{color:#CBCBCB;}
-.row5{color:#676767; background-color:rgba(0,0,0,.5);}
+.row4{color:#CBCBCB; background-color:rgba(0,0,0,.9);}
+.row5{color:#676767; background-color:rgba(0,0,0,1);}
 .row5 a{color:inherit;}
 .row6{color:#474747; background-color:#D7D7D7;}
 
